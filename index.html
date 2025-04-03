@@ -131,11 +131,19 @@
           /* height: 100%; */
       }
 
-      .description {
-          margin-top: 0.5rem;
+      .description1 {
+          /* margin-top: 0.5rem; */
+          padding-left: 35px;
           font-size: 0.9rem;
           color: #555;
-          text-align: bottom;
+          text-align: center;
+      }
+
+      .description2 {
+          /* margin-top: 0.5rem; */
+          font-size: 0.9rem;
+          color: #555;
+          text-align: center;
       }
 
       .title {
@@ -403,7 +411,7 @@
         <div class="item">
             <div class="title">Experiment Setup</div>
             <img src="./static/images/chipbag_rgb.png" alt="Experiment Setup">
-            <div class="description">Capturing a chipbag while playing MIDI audio of "Mary has a little lamb..."</div>
+            <!-- <div class="description">Capturing a chipbag while playing MIDI/speech audio of "Mary has a little lamb..."</div> -->
         </div>
 
         <!-- Visualized Events -->
@@ -412,6 +420,22 @@
             <img src="./static/images/chipbag_event.png" alt="Visualized Events">
             <!-- <div class="description">This is a brief description of the experiment setup.</div> -->
         </div>
+
+        <!-- Experiment Setup -->
+        <div class="item">
+          <div class="title">Experiment Setup</div>
+          <img src="./static/images/speaker_rgb.png" alt="Experiment Setup">
+          <!-- <div class="description">Capturing a speaker while playing MIDI/speech audio of "Mary has a little lamb..."</div> -->
+        </div>
+
+        <!-- Visualized Events -->
+        <div class="item">
+          <div class="title">Visualized Events</div>
+          <img src="./static/images/speaker_event.png" alt="Visualized Events">
+        <!-- <div class="description">This is a brief description of the experiment setup.</div> -->
+        </div>
+        <div class="description1">Capturing a chipbag while playing MIDI/speech audio of "Mary has a little lamb..."</div>
+        <div class="description2">Capturing a speaker while playing MIDI/speech audio of "Mary has a little lamb..."</div>
 
         <!-- Microphone -->
         <div class="item">
@@ -435,19 +459,38 @@
             </div>
         </div>
 
-        <!-- Experiment Setup -->
+        <!-- Microphone -->
         <div class="item">
-          <!-- <div class="title">Experiment Setup</div> -->
-          <img src="./static/images/chipbag_rgb.png" alt="Experiment Setup">
-          <div class="description">Capturing a chipbag while playing Speech of "Mary has a little lamb..."</div>
+        <div class="title">Microphone</div>
+        <img src="./static/images/midi_microphone.png" alt="Microphone Spectrogram">
+        <div class="audio-player">
+            <audio controls>
+                <source src="./static/audios/midi_microphone.wav" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+        <!-- Recovered -->
+        <div class="item">
+          <div class="title">Recovered</div>
+          <img src="./static/images/speakermidi_recovered.png" alt="Recovered Spectrogram">
+          <div class="audio-player">
+              <audio controls>
+                  <source src="./static/audios/speakermidi_ours.wav" type="audio/mpeg">
+              </audio>
+          </div>
       </div>
 
+        <!-- Experiment Setup -->
+        <!-- <div class="item">
+          <img src="./static/images/chipbag_rgb.png" alt="Experiment Setup">
+          <div class="description">Capturing a chipbag while playing Speech of "Mary has a little lamb..."</div>
+      </div> -->
+
       <!-- Visualized Events -->
-      <div class="item">
-          <!-- <div class="title">Visualized Events</div> -->
+      <!-- <div class="item">
           <img src="./static/images/chipbag_event.png" alt="Visualized Events">
-          <!-- <div class="description">This is a brief description of the experiment setup.</div> -->
-      </div>
+      </div> -->
 
       <!-- Microphone -->
       <div class="item">
@@ -470,56 +513,6 @@
               </audio>
           </div>
       </div>
-
-      <!-- Experiment Setup -->
-      <div class="item">
-        <!-- <div class="title">Experiment Setup</div> -->
-        <img src="./static/images/speaker_rgb.png" alt="Experiment Setup">
-        <div class="description">Capturing a speaker while playing MIDI audio of "Mary has a little lamb..."</div>
-    </div>
-
-    <!-- Visualized Events -->
-    <div class="item">
-        <!-- <div class="title">Visualized Events</div> -->
-        <img src="./static/images/speaker_event.png" alt="Visualized Events">
-        <!-- <div class="description">This is a brief description of the experiment setup.</div> -->
-    </div>
-
-    <!-- Microphone -->
-    <div class="item">
-        <!-- <div class="title">Microphone</div> -->
-        <img src="./static/images/midi_microphone.png" alt="Microphone Spectrogram">
-        <div class="audio-player">
-            <audio controls>
-                <source src="./static/audios/midi_microphone.wav" type="audio/mpeg">
-            </audio>
-        </div>
-    </div>
-
-    <!-- Recovered -->
-    <div class="item">
-        <!-- <div class="title">Recovered</div> -->
-        <img src="./static/images/speakermidi_recovered.png" alt="Recovered Spectrogram">
-        <div class="audio-player">
-            <audio controls>
-                <source src="./static/audios/speakermidi_ours.wav" type="audio/mpeg">
-            </audio>
-        </div>
-    </div>
-
-    <!-- Experiment Setup -->
-    <div class="item">
-      <!-- <div class="title">Experiment Setup</div> -->
-      <img src="./static/images/speaker_rgb.png" alt="Experiment Setup">
-      <div class="description">Capturing a speaker while playing Speech of "Mary has a little lamb..."</div>
-  </div>
-
-  <!-- Visualized Events -->
-  <div class="item">
-      <!-- <div class="title">Visualized Events</div> -->
-      <img src="./static/images/speaker_event.png" alt="Visualized Events">
-      <!-- <div class="description">This is a brief description of the experiment setup.</div> -->
-  </div>
 
   <!-- Microphone -->
   <div class="item">
