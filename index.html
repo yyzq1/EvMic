@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>EvMic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -44,6 +44,176 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment Section</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f9f9f9;
+          color: #333;
+      }
+      div.custom-width{
+        width: 1000px; /* 设置宽度为300像素 */
+        /* margin-left: 20%; */
+        margin: 0 auto;
+        /* max-width: fit-content; */
+      }
+      img.custom-width{
+        width: 1000px;
+      }
+      img.custom-width-teaser{
+        width: 1000px;
+        margin: 0 auto;
+      }
+
+      .experiment-section {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start; /* Align tops of all items */
+          gap: 1.5rem;
+          padding: 2rem;
+          max-width: 1200px;
+          margin: 0 auto;
+      }
+
+      .item {
+          flex: 1;
+          min-width: 250px;
+          max-width: 300px;
+          text-align: center;
+      }
+
+      .item img {
+          width: 100%;
+          height: 100%; /* Set a fixed height for all images */
+          object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 0rem;
+          background-color: #fff;
+      }
+
+      .spectrogram {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+      }
+
+      .spectrogram img {
+          width: 100%;
+          height: 100%; /* Match height with other images */
+          object-fit: cover;
+      }
+
+      .audio-player {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          width: 100%;
+          padding: 0rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          background-color: #fff;
+      }
+
+      .audio-player audio {
+          width: 100%;
+          /* height: 100%; */
+      }
+
+      .description {
+          margin-top: 0.5rem;
+          font-size: 0.9rem;
+          color: #555;
+          text-align: bottom;
+      }
+
+      .title {
+          font-size: 1rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+      }
+      .background-container {
+            /* position: relative; */
+            margin: 0 auto;
+            width: 1000px;
+            height: 346px;
+            background-image: url('./static/images/teaser.png');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .audio-button {
+            position: relative;
+            width: 35px;
+            height: 35px;
+            background-color: rgba(255, 0, 0, 0.7);
+            border-radius: 50%;
+            border: 2px solid white;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.2s, background-color 0.2s;
+            /* transform: translate(-50%, -50%); Center the button on its position */
+        }
+        
+        .audio-button:hover {
+            /* transform: translate(-50%, -50%) scale(1.1); */
+            background-color: rgba(255, 0, 0, 0.9);
+        }
+        
+        .audio-button::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-left: 16px solid white;
+            border-bottom: 8px solid transparent;
+            margin-left: 4px;
+        }
+        
+        /* Button positions - you'll need to adjust these based on your image */
+        #button1 {
+            left: 180px;
+            top: 90px;
+        }
+        
+        #button2 {
+            left: 63px;
+            top: 40px;
+        }
+        
+        #button3 {
+            left: 370px;
+            top: 10px;
+        }
+        
+        #button4 {
+            left: 450px;
+            top: -25px;
+        }
+        
+        #button5 {
+            left: 100px;
+            top: 75px;
+        }
+        #button6 {
+            left: 411px;
+            top: 80px;
+        }
+  </style>
+  <style>
+   h4 { text-align: center;}
+</style>
+</head>
 <body>
 
 
@@ -52,21 +222,33 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">EvMic: Event-based Non-contact Sound Recovery from Effective Spatial-temporal Modeling</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="" target="_blank">Hao Yin</a><sup>2,1*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://guoshi28.github.io/" target="_blank">Shi Guo</a><sup>1*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://stephenjia.github.io/" target="_blank">Xu Jia</a><sup>2†</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://scholar.google.com.hk/citations?user=D8VMkA8AAAAJ&hl=en" target="_blank">Xudong Xu</a><sup>1</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://scholar.google.com.sg/citations?user=bUtRE5UAAAAJ&hl=zh-CN" target="_blank">Lu Zhang</a><sup>2</sup>,</span>
+                        <span class="author-block">
+                          <a href="https://scholar.google.com/citations?user=-QtVtNEAAAAJ&hl=en" target="_blank">Si Liu</a><sup>4</sup>,</span>
+                          <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=nVgPQpoAAAAJ&hl=en&oi=ao" target="_blank">Dong Wang</a><sup>2</sup>,</span>
+                            <span class="author-block">
+                              <a href="https://scholar.google.com/citations?user=D3nE0agAAAAJ&hl=en" target="_blank">Huchuan Lu</a><sup>2</sup>,</span>
+                              <span class="author-block">
+                                <a href="https://tianfan.info/" target="_blank">Tianfan Xue</a><sup>3,1</sup>,</span>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Shanghai AI Laboratory,<sup>2</sup>Dalian University of Technology,<br><sup>3</sup>The Chinese University of Hong Kong,<sup>4</sup>Beihang University</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution,<sup>†</sup>Indicates Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -82,20 +264,9 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/yyzq1/EvMic/tree/main" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -122,23 +293,47 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
+<!-- Teaser -->
+<body>
+<section class="section hero is-small">
+  <h2 class="title is-3" style="text-align:center;">Teaser</h2>
+  <div class="background-container">
+  <div id="button1" class="audio-button" onclick="playAudio('chipbag')"></div>
+  <div id="button2" class="audio-button" onclick="playAudio('speaker')"></div>
+  <div id="button3" class="audio-button" onclick="playAudio('speaker1')"></div>
+  <div id="button4" class="audio-button" onclick="playAudio('speaker2')"></div>
+  <div id="button5" class="audio-button" onclick="playAudio('microphone')"></div>
+  <div id="button6" class="audio-button" onclick="playAudio('stereo')"></div>
+  
+  <!-- Audio Elements -->
+  <audio id="chipbag" src="./static/audios/chipbagspeech_ours.wav"></audio>
+  <audio id="speaker" src="./static/audios/speakerspeech_ours.wav"></audio>
+  <audio id="speaker1" src="./static/audios/left.wav"></audio>
+  <audio id="speaker2" src="./static/audios/right.wav"></audio>
+  <audio id="microphone" src="./static/audios/speech_microphone.wav"></audio>
+  <audio id="stereo" src="./static/audios/stereo.wav"></audio>
+</div>
+  <p style="text-align:center;">We propose a novel non-contact sound recovery system based on event cameras.</p>
 </section>
-<!-- End teaser video -->
+<script>
+  function playAudio(id) {
+            // Stop all audio first
+            document.querySelectorAll('audio').forEach(audio => {
+                audio.pause();
+                audio.currentTime = 0;
+            });
+            
+            // Play the selected audio
+            const audio = document.getElementById(id);
+            audio.play();
+        }
+        
+        // Replace placeholder with your actual image
+        // In a real implementation, you would use your own image URL
+        document.querySelector('.background-container').style.backgroundImage = "url('./static/images/teaser.png')";
+</script>
+<body>
+<!-- End Teaser -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,7 +343,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            When sound waves hit an object, they induce vibrations that produce high-frequency and subtle visual changes, which can be used for recovering the sound. Early studies always encounter trade-offs related to sampling rate, bandwidth, field of view, and the simplicity of the optical path. Recent advances in event camera hardware show good potential for its application in visual sound recovery, because of its superior ability in capturing high-frequency signals. However, existing event-based vibration recovery methods are still sub-optimal for sound recovery. In this work, we propose a novel pipeline for non-contact sound recovery, fully utilizing spatial-temporal information from the event stream. We first generate a large training set using a novel simulation pipeline. Then we designed a network that leverages the sparsity of events to capture spatial information and uses Mamba to model long-term temporal information. Lastly, we train a spatial aggregation block to aggregate information from different locations to further improve signal quality. To capture event signals caused by sound waves, we also designed an imaging system using a laser matrix to enhance the gradient and collected multiple data sequences for testing. Experimental results on synthetic and real-world data demonstrate the effectiveness of our method. Our code and data will be publicly available upon acceptance.
           </p>
         </div>
       </div>
@@ -161,118 +356,191 @@
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+    <h4 class="title is-3" style="text-align:center;">Method</h4>
+    <figure style="text-align:center;">
+      <img class="custom-width" src="static/images/framework.png" alt="Framework Image">
+      <!-- <figcaption style="color:#555; ">
+        <div class="content has-text-justified">
+        (a) Overview of our proposed network architecture. The event stream is processed into voxel grids, from which patches centered around the speckles are selected. First, the patches are input into a sparse convolution-based lightweight backbone to extract visual features. Next, a spatial attention block aggregates the information in the different patches. Finally, Mamba is employed to model long-term temporal information and reconstruct the audio that caused the object’s vibration. (b) and (c) illustrate the detailed structure of SAB and SSM. (c) At time t g<sub>t</sub> is the input feature, o<sub>t</sub> is the output and h<sub>t</sub> denotes the hidden state. A, B, and C are the gating weights optimized by Mamba. Δ is used to discretize the continuous parameters A and B.
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
+      </figcaption> -->
+      <div class="content has-text-justified custom-width">
+        (a) Overview of our proposed network architecture. The event stream is processed into voxel grids, from which patches centered around the speckles are selected. First, the patches are input into a sparse convolution-based lightweight backbone to extract visual features. Next, a spatial attention block aggregates the information in the different patches. Finally, Mamba is employed to model long-term temporal information and reconstruct the audio that caused the object’s vibration. (b) and (c) illustrate the detailed structure of SAB and SSM. (c) At time t g<sub>t</sub> is the input feature, o<sub>t</sub> is the output and h<sub>t</sub> denotes the hidden state. A, B, and C are the gating weights optimized by Mamba. Δ is used to discretize the continuous parameters A and B.
+      <div>
+    </img>
+    </figure>
   </div>
-</div>
-</div>
 </section>
 <!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
+<!--video -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3" style="text-align:center;">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="./static/videos/supp.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End video -->
 
+<!--experiment result-->
+<body>
+    <h4 class="title is-3">Experiment Results</h4>
+    <section class="experiment-section">
+        <!-- Experiment Setup -->
+        <div class="item">
+            <div class="title">Experiment Setup</div>
+            <img src="./static/images/chipbag_rgb.png" alt="Experiment Setup">
+            <div class="description">Capturing a chipbag while playing MIDI audio of "Mary has a little lamb..."</div>
+        </div>
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+        <!-- Visualized Events -->
+        <div class="item">
+            <div class="title">Visualized Events</div>
+            <img src="./static/images/chipbag_event.png" alt="Visualized Events">
+            <!-- <div class="description">This is a brief description of the experiment setup.</div> -->
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+
+        <!-- Microphone -->
+        <div class="item">
+            <div class="title">Microphone</div>
+            <img src="./static/images/midi_microphone.png" alt="Microphone Spectrogram">
+            <div class="audio-player">
+                <audio controls>
+                    <source src="./static/audios/midi_microphone.wav" type="audio/mpeg">
+                </audio>
+            </div>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+
+        <!-- Recovered -->
+        <div class="item">
+            <div class="title">Recovered</div>
+            <img src="./static/images/chipbagmidi_recovered.png" alt="Recovered Spectrogram">
+            <div class="audio-player">
+                <audio controls>
+                    <source src="./static/audios/chipbagmidi_ours.wav" type="audio/mpeg">
+                </audio>
+            </div>
         </div>
+
+        <!-- Experiment Setup -->
+        <div class="item">
+          <!-- <div class="title">Experiment Setup</div> -->
+          <img src="./static/images/chipbag_rgb.png" alt="Experiment Setup">
+          <div class="description">Capturing a chipbag while playing Speech of "Mary has a little lamb..."</div>
       </div>
+
+      <!-- Visualized Events -->
+      <div class="item">
+          <!-- <div class="title">Visualized Events</div> -->
+          <img src="./static/images/chipbag_event.png" alt="Visualized Events">
+          <!-- <div class="description">This is a brief description of the experiment setup.</div> -->
+      </div>
+
+      <!-- Microphone -->
+      <div class="item">
+          <!-- <div class="title">Microphone</div> -->
+          <img src="./static/images/speech_microphone.png" alt="Microphone Spectrogram">
+          <div class="audio-player">
+              <audio controls>
+                  <source src="./static/audios/speech_microphone.wav" type="audio/mpeg">
+              </audio>
+          </div>
+      </div>
+
+      <!-- Recovered -->
+      <div class="item">
+          <!-- <div class="title">Recovered</div> -->
+          <img src="./static/images/chipbagspeech_recovered.png" alt="Recovered Spectrogram">
+          <div class="audio-player">
+              <audio controls>
+                  <source src="./static/audios/chipbagspeech_ours.wav" type="audio/mpeg">
+              </audio>
+          </div>
+      </div>
+
+      <!-- Experiment Setup -->
+      <div class="item">
+        <!-- <div class="title">Experiment Setup</div> -->
+        <img src="./static/images/speaker_rgb.png" alt="Experiment Setup">
+        <div class="description">Capturing a speaker while playing MIDI audio of "Mary has a little lamb..."</div>
     </div>
+
+    <!-- Visualized Events -->
+    <div class="item">
+        <!-- <div class="title">Visualized Events</div> -->
+        <img src="./static/images/speaker_event.png" alt="Visualized Events">
+        <!-- <div class="description">This is a brief description of the experiment setup.</div> -->
+    </div>
+
+    <!-- Microphone -->
+    <div class="item">
+        <!-- <div class="title">Microphone</div> -->
+        <img src="./static/images/midi_microphone.png" alt="Microphone Spectrogram">
+        <div class="audio-player">
+            <audio controls>
+                <source src="./static/audios/midi_microphone.wav" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <!-- Recovered -->
+    <div class="item">
+        <!-- <div class="title">Recovered</div> -->
+        <img src="./static/images/speakermidi_recovered.png" alt="Recovered Spectrogram">
+        <div class="audio-player">
+            <audio controls>
+                <source src="./static/audios/speakermidi_ours.wav" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <!-- Experiment Setup -->
+    <div class="item">
+      <!-- <div class="title">Experiment Setup</div> -->
+      <img src="./static/images/speaker_rgb.png" alt="Experiment Setup">
+      <div class="description">Capturing a speaker while playing Speech of "Mary has a little lamb..."</div>
   </div>
-</section>
-<!-- End video carousel -->
 
+  <!-- Visualized Events -->
+  <div class="item">
+      <!-- <div class="title">Visualized Events</div> -->
+      <img src="./static/images/speaker_event.png" alt="Visualized Events">
+      <!-- <div class="description">This is a brief description of the experiment setup.</div> -->
+  </div>
 
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+  <!-- Microphone -->
+  <div class="item">
+      <!-- <div class="title">Microphone</div> -->
+      <img src="./static/images/speech_microphone.png" alt="Microphone Spectrogram">
+      <div class="audio-player">
+          <audio controls>
+              <source src="./static/audios/speech_microphone.wav" type="audio/mpeg">
+          </audio>
       </div>
-    </div>
-  </section>
-<!--End paper poster -->
+  </div>
 
+  <!-- Recovered -->
+  <div class="item">
+      <!-- <div class="title">Recovered</div> -->
+      <img src="./static/images/speakerspeech_recovered.png" alt="Recovered Spectrogram">
+      <div class="audio-player">
+          <audio controls>
+              <source src="./static/audios/speakerspeech_ours.wav" type="audio/mpeg">
+          </audio>
+      </div>
+  </div>
+    </section>
+</body>
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
