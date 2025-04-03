@@ -1,8 +1,6 @@
 # EvMic: Event-based Non-contact Sound Recovery from Effective Spatial-temporal Modeling
 
-## Code is coming soon.](https://horwitz.ai)
-
-To start using the template click on `Use this Template`.
+## Code is coming soon.
 
 ## Acknowledgments
 
